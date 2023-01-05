@@ -1,4 +1,7 @@
+@import "fonts";
+
 body {
+  font-family: "Averta";
   background: #ffffff;
   color: #111;
   overflow-x: hidden;
@@ -16,5 +19,86 @@ ul {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+
   padding: 0 15px;
+}
+
+//navBar
+.nav-bar {
+  border-bottom: 1px solid #d9d9d9;
+}
+.nav-bar__container {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-list {
+  display: flex;
+
+  li {
+    padding: 0 2rem;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+
+.nav-link {
+  color: #111111;
+
+  //color: #00249c;
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+  &:hover {
+    color: #00249c;
+    transition: width 0.2s;
+  }
+}
+
+.nav-link:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: #00249c;
+  transition: width 0.5s;
+}
+
+.nav-link:hover:after {
+  content: "";
+  width: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 2px;
+  background-color: #00249c;
+  transition: width 0.2s;
+}
+
+.nav-btn {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  margin-right: 10px;
+  svg {
+    margin-right: 5px;
+  }
+}
+
+//navBar
+.target-btn {
+  padding: 10px;
+  background: #00249c;
+  cursor: pointer;
+
+  &:hover {
+    transition: 0.2s linear;
+    background: #021f82;
+  }
 }

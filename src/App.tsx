@@ -1,19 +1,18 @@
 import React from "react";
-import NavBar from "./Components/navigation/navBar";
+import { Route, Switch, Redirect } from "react-router-dom";
 
-import { Route, Switch } from "react-router-dom";
-// import { Route, Switch } from "react-router-dom";
+import NavBar from "./Components/navigation/navBar";
 import MainPage from "./Components/pages/mainPage";
 
 function App() {
   return (
-    <div className="App">
+    <>
       <NavBar />
-
       <Switch>
         <Route path="/" component={MainPage} />
+        <Redirect to="/" />
       </Switch>
-    </div>
+    </>
   );
 }
 
