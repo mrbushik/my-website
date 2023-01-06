@@ -1,8 +1,8 @@
 @import "fonts";
 
 body {
-  font-family: "Averta";
-  background: #ffffff;
+  font-family: "Roboto";
+  //background: #ffffff;
   color: #111;
   overflow-x: hidden;
 }
@@ -25,6 +25,12 @@ ul {
 
 //navBar
 .nav-bar {
+  background: #ffffff;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
   border-bottom: 1px solid #d9d9d9;
 }
 .nav-bar__container {
@@ -92,6 +98,50 @@ ul {
 }
 
 //navBar
+//main title
+.owner-benefit__container {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.owner-info__container {
+  display: flex;
+  align-items: center;
+}
+
+.owner-img__container {
+  background: linear-gradient(#9187ac, #9288ab, #9489ae, #9288ad);
+  height: 420px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.owner-benefit {
+  padding-left: 3.5rem;
+  h1 {
+    font-size: 48px;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  p {
+    margin-top: 0;
+    font-size: 24px;
+  }
+  a {
+    display: block;
+    font-family: "Roboto";
+    font-size: 24px;
+    color: #00249c;
+  }
+}
+
+.owner-benefit__container {
+  //margin-top: 50px;
+  //display: flex;
+}
+//main title
 .target-btn {
   padding: 10px;
   background: #00249c;
