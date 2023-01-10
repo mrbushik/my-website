@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const MainTitle: React.FC = () => {
+
   return (
     <div className="container">
       <div className="owner-benefit__container">
