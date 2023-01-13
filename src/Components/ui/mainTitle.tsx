@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { reactIcon } from "../../styles/icons";
 
 const MainTitle: React.FC = () => {
   return (
@@ -15,7 +16,8 @@ const MainTitle: React.FC = () => {
           <div className="owner-benefit">
             <h1>Nikita Bushuev</h1>
             <p>
-              React Frontend Developer <Link to="/">learn more</Link>
+              React Frontend Developer
+              <Link to="/">learn more</Link>
             </p>
           </div>
         </div>
