@@ -119,6 +119,7 @@ ul {
   svg {
     width: 20px;
   }
+
   .text-container {
     display: flex;
     align-items: center;
@@ -275,6 +276,39 @@ ul {
   }
 }
 //contactForm ---
+
+//resume page
+.resume-header {
+  &__container {
+  }
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+  background: #021f82;
+  color: #fff;
+  h2 {
+    font-weight: 800;
+    letter-spacing: 5px;
+    font-size: 62px;
+    padding-top: 30px;
+    margin-bottom: 0px;
+  }
+}
+
+.resume-suriname {
+  margin-top: -5px;
+  font-weight: 500;
+  font-size: 62px;
+  margin-bottom: 0px;
+}
+.resume-subtitle {
+  font-size: 24px;
+  margin-top: 5px;
+  letter-spacing: 1px;
+
+  padding-bottom: 30px;
+}
+//resume page
 .aquamarine {
   background: #bde9c9;
 }
