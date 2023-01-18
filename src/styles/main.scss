@@ -352,34 +352,40 @@ ul {
 }
 .skills-list {
   list-style: disc;
+  li {
+    margin-top: 25px;
+  }
   padding-left: 15px;
 }
 
 .experience-item {
   display: flex;
   align-items: center;
+  margin-top: 10px;
+}
+.resume-experience__title {
+  margin-bottom: 25px;
 }
 .experience-length__description {
   margin-right: 10%;
   p {
-    min-width {
-    }
     width: 80px;
   }
 }
 .experience-year {
   font-weight: 300;
-  margin-top: 25px;
+  margin-top: 0px;
 }
 .experience-company__description {
   h5 {
-    margin-top: 30px;
+    margin-top: 0px;
     margin-bottom: 10px;
     font-size: 24px;
   }
   p {
     margin-top: 0px;
     color: #a6a6a6;
+    margin-bottom: 0;
   }
 }
 //resume page

@@ -12,6 +12,10 @@ const ResumePage: React.FC = () => {
     "TypeScript",
     "Node JS",
     "Express JS",
+    "MongoDB",
+    "CSS",
+    "HTML",
+    "Adaptive layout",
     "Git",
   ];
   const experienceList: experienceInterface[] = [
@@ -35,6 +39,23 @@ const ResumePage: React.FC = () => {
       company: "PC master, repair of computers laptops and phones ",
       description:
         "He was engaged in the repair of various digital devices, communicated with customers and sold various services.",
+    },
+  ];
+  const educationList: experienceInterface[] = [
+    {
+      year: "2022 - present",
+      company: "Mr. English",
+      description: "English language school",
+    },
+    {
+      year: 2022,
+      company: "Glo Academy",
+      description: "Graduated from courses in JavaScript and React",
+    },
+    {
+      year: "2018-2022 ",
+      company: "College of Engineering Technology and Design",
+      description: "Technician programmer",
     },
   ];
   return (
@@ -93,7 +114,9 @@ const ResumePage: React.FC = () => {
           </div>
           <div className="resume-experience__education">
             <div className="resume-experience">
-              <h5 className="resume-section__name">Experience</h5>
+              <h5 className="resume-section__name resume-experience__title">
+                Experience
+              </h5>
               {experienceList.map(
                 (item: experienceInterface, index: number) => (
                   <ExperienceItem
@@ -107,7 +130,17 @@ const ResumePage: React.FC = () => {
               )}
             </div>
             <div className="resume-education">
-              <h5 className="resume-section__name">Education</h5>
+              <h5 className="resume-section__name resume-experience__title">
+                Education
+              </h5>
+              {educationList.map((item: experienceInterface, index: number) => (
+                <ExperienceItem
+                  year={item.year}
+                  company={item.company}
+                  description={item.description}
+                  key={index}
+                />
+              ))}
             </div>
           </div>
         </div>

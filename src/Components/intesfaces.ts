@@ -5,9 +5,9 @@ export interface aboutMeItemsInterface {
   link: string;
   icon: any;
 }
-export interface experienceInterface  {
-  year: number;
-  length: string;
+export interface experienceInterface {
+  year: number | string;
+  length?: string;
   company: string;
   description: string;
 }
