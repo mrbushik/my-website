@@ -8,7 +8,6 @@ body {
 
 a {
   text-decoration: none;
-  color: #ffffff;
 }
 
 ul {
@@ -245,6 +244,7 @@ ul {
   }
 }
 .contact-btn {
+  color: #fff;
   padding: 15px;
   background: #00249c;
   cursor: pointer;
@@ -305,10 +305,85 @@ ul {
   font-size: 24px;
   margin-top: 5px;
   letter-spacing: 1px;
-
   padding-bottom: 30px;
 }
+.resume-contact-__img {
+  width: 20px;
+  height: 20px;
+}
+.resume-contact__container {
+  padding-bottom: 50px;
+  border-bottom: 1px solid #a6a6a6;
+  color: rgb(61, 61, 61);
+  display: flex;
+}
+.resume-section__name {
+  color: #111111;
+  font-size: 36px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.resume-contact__wrapper {
+  margin-right: 15%;
+  width: 250px;
+  div {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    img {
+      margin-right: 7px;
+    }
+  }
+  p {
+    margin: 0;
+  }
+}
+.resume-about__wrapper {
+  p {
+    margin-top: 15px;
+  }
+}
+.resume-middle__section {
+  display: flex;
+}
+.resume_skills__list {
+  margin-right: 15%;
+  width: 232px;
+}
+.skills-list {
+  list-style: disc;
+  padding-left: 15px;
+}
+
+.experience-item {
+  display: flex;
+  align-items: center;
+}
+.experience-length__description {
+  margin-right: 10%;
+  p {
+    min-width {
+    }
+    width: 80px;
+  }
+}
+.experience-year {
+  font-weight: 300;
+  margin-top: 25px;
+}
+.experience-company__description {
+  h5 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+  p {
+    margin-top: 0px;
+    color: #a6a6a6;
+  }
+}
 //resume page
+
 .aquamarine {
   background: #bde9c9;
 }
@@ -325,6 +400,7 @@ ul {
   padding: 10px;
   background: #00249c;
   cursor: pointer;
+  color: #fff;
 
   &:hover {
     transition: 0.2s linear;
