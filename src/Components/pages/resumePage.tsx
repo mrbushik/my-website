@@ -144,6 +144,27 @@ const ResumePage: React.FC = () => {
             </div>
           </div>
         </div>
+        <div className="footer-resume">
+          <h5 className="resume-section__name">Reward and CERTIFICATES</h5>
+          <div className="footer-resume__container">
+            <div className="reward-resume__item">
+              <p className="reward-resume__time">Jul 2022 | Liceria & Co.</p>
+              <p className="reward-resume__description">
+                EFSET English Certificate 42/100 (B1 Intermediate)
+                Accreditation:{" "}
+                <a href="https://www.efset.org/cert/dZeWuP" target="_blank">
+                  View the accreditation
+                </a>
+              </p>
+            </div>
+            <div className="reward-resume__item">
+              <p className="reward-resume__time">Mar 2021 </p>
+              <p className="reward-resume__description">
+                3rd place on the demo day of Teenguru Business Jam
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

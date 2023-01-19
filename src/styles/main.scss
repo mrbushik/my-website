@@ -1,4 +1,4 @@
-@import "fonts";
+@import "adaptiveResume";
 
 body {
   font-family: "Roboto";
@@ -345,6 +345,8 @@ ul {
 }
 .resume-middle__section {
   display: flex;
+  border-bottom: 1px solid #a6a6a6;
+  padding-bottom: 50px;
 }
 .resume_skills__list {
   margin-right: 15%;
@@ -386,6 +388,23 @@ ul {
     margin-top: 0px;
     color: #a6a6a6;
     margin-bottom: 0;
+  }
+}
+.footer-resume__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.reward-resume__time {
+  font-weight: 300;
+}
+.reward-resume__item {
+  margin-right: 5%;
+}
+.reward-resume__description {
+  font-weight: 700;
+  width: 200px;
+  a {
+    color: #00249c;
   }
 }
 //resume page
