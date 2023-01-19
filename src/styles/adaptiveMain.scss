@@ -1,0 +1,11 @@
+@media (max-width: 780px) {
+  .owner-benefit__container {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+  }
+  .owner-info__container {
+    margin-top: 30px;
+    margin-bottom: 100px;
+  }
+}

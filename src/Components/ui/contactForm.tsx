@@ -22,7 +22,7 @@ const ContactForm: React.FC = () => {
             <div className="indicator-contact__container">
               <img
                 className="indicator-img"
-                src="https://res.cloudinary.com/drfjcq9hg/image/upload/v1673617053/bushik123/I_m_afk9ud.png"
+                src="https://res.cloudinary.com/drfjcq9hg/image/upload/v1674148505/bushik123/I_m2_rsygoj.png"
               />
             </div>
           </div>

@@ -20,6 +20,9 @@ ul {
 }
 
 //navBar
+.adaptive-btn {
+  display: none;
+}
 .nav-bar {
   background: #ffffff;
   position: fixed;
@@ -474,4 +477,6 @@ ul {
     background: #021f82;
   }
 }
+@import "adaptiveNavBar";
+@import "adaptiveMain";
 @import "adaptiveResume";
