@@ -11,3 +11,8 @@ export interface experienceInterface {
   company: string;
   description: string;
 }
+export interface contacts {
+  imgLink: string;
+  itemLink: string;
+  title: string;
+}
