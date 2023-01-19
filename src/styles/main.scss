@@ -1,5 +1,3 @@
-@import "adaptiveResume";
-
 body {
   font-family: "Roboto";
   color: #111;
@@ -334,6 +332,9 @@ ul {
       margin-right: 7px;
     }
   }
+  a {
+    color: #111111;
+  }
   p {
     margin: 0;
   }
@@ -432,3 +433,4 @@ ul {
     background: #021f82;
   }
 }
+@import "adaptiveResume";

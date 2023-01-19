@@ -76,14 +76,14 @@ const ResumePage: React.FC = () => {
                 className="resume-contact-__img"
                 src="https://res.cloudinary.com/drfjcq9hg/image/upload/v1673863049/bushik123/phone_tpa14i.png"
               />
-              <a>+375298855398</a>
+              <a href="tel:+375298855398">+375298855398</a>
             </div>
             <div>
               <img
                 className="resume-contact-__img"
                 src="https://res.cloudinary.com/drfjcq9hg/image/upload/v1673863049/bushik123/mail_r75cd3.png"
               />
-              <a>mrbushik1@gmail.com</a>
+              <a href="mailto:mrbushik1@gmail.com">mrbushik1@gmail.com</a>
             </div>
             <div>
               <img

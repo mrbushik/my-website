@@ -1,3 +1,83 @@
-@media(max-width: 600px){
-  .resume-contact__container
+@media (max-width: 600px) {
+  .resume-contact__container {
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+  .resume-contact__wrapper {
+    margin: 0 auto;
+    width: fit-content;
+  }
+
+  .resume-about__wrapper {
+    position: relative;
+    padding-bottom: 50px;
+  }
+  .resume-about__wrapper::after {
+    border-bottom: 1px solid #a6a6a6;
+    content: "";
+    display: block;
+    position: absolute;
+    right: -15px;
+    bottom: -0px;
+    width: 600px;
+    height: 0px;
+  }
+  .resume-about__wrapper {
+    margin-left: 5%;
+  }
+  .resume-middle__section {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .resume_skills__list {
+    margin-right: 0;
+    width: auto;
+    position: relative;
+    padding-bottom: 50px;
+  }
+  .resume_skills__list::after {
+    border-bottom: 1px solid #a6a6a6;
+    content: "";
+    display: block;
+    position: absolute;
+    right: -240px;
+    bottom: 0px;
+    width: 600px;
+    height: 0px;
+  }
+  .resume-experience {
+    position: relative;
+    padding-bottom: 50px;
+  }
+  .resume-experience::after {
+    border-bottom: 1px solid #a6a6a6;
+    content: "";
+    display: block;
+    position: absolute;
+    right: -15px;
+    bottom: 0px;
+    width: 600px;
+    height: 0px;
+  }
+}
+
+@media (max-width: 450px) {
+  .experience-item {
+    display: block;
+    margin-bottom: 70px;
+    position: relative;
+  }
+
+  .experience-length__description {
+    display: flex;
+    margin-bottom: 10px;
+    p {
+      width: fit-content;
+      margin: 0 5% 0 0;
+    }
+  }
+  .experience-year {
+    font-weight: 700;
+  }
 }
