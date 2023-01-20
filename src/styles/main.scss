@@ -23,6 +23,9 @@ ul {
 .adaptive-btn {
   display: none;
 }
+//.nav-bar__mobile {
+//  display: none;
+//}
 .nav-bar {
   background: #ffffff;
   position: fixed;
@@ -476,6 +479,9 @@ ul {
     transition: 0.2s linear;
     background: #021f82;
   }
+}
+.d-block {
+  display: block;
 }
 @import "adaptiveNavBar";
 @import "adaptiveMain";

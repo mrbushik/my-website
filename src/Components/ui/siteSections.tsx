@@ -49,7 +49,7 @@ const SiteSections: React.FC = () => {
       </h3>
       <div className="section-wrapper">
         {aboutMeItems.map((item: aboutMeItemsInterface, index: number) => (
-          <Link to={item.link}>
+          <Link to={item.link} key={index}>
             <div className={"about-me_container " + item.background}>
               <p>
                 {item.icon}

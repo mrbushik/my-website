@@ -16,3 +16,7 @@ export interface contacts {
   itemLink: string;
   title: string;
 }
+export interface selectionListItem {
+  name: string;
+  link: string;
+}
