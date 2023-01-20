@@ -10,9 +10,9 @@ const NavBar: React.FC = () => {
   const [activeBtn, setActiveBtn] = useState<boolean>(false);
 
   const sectionList: selectionListItem[] = [
-    { name: "Contacts", link: "contacts" },
-    { name: "My works", link: "my-works" },
-    { name: "Resume", link: "resume" },
+    { name: "Contacts", link: "/contacts" },
+    { name: "My works", link: "/my-works" },
+    { name: "Resume", link: "/resume" },
   ];
 
   useEffect(() => {
@@ -115,7 +115,12 @@ const NavBar: React.FC = () => {
         </div>
       </nav>
 
-      {activeBtn && <AdaptiveNavBar sectionList={sectionList} />}
+      {activeBtn && (
+        <AdaptiveNavBar
+          sectionList={sectionList}
+          handleClick={handleBtnClick}
+        />
+      )}
     </div>
   );
 };

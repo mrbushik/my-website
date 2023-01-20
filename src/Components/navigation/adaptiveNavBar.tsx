@@ -1,19 +1,33 @@
 import React from "react";
 import { selectionListItem } from "../intesfaces";
-import { Link } from "react-router-dom";
+import { Link, useHistory, useLocation } from "react-router-dom";
 import { contactIcon } from "../../styles/icons";
 
 type navBarProps = {
   sectionList: selectionListItem[];
+  handleClick(): void;
 };
-
-const AdaptiveNavBar: React.FC<navBarProps> = ({ sectionList }) => {
+const AdaptiveNavBar: React.FC<navBarProps> = ({
+  sectionList,
+  handleClick,
+}) => {
+  const location = useLocation();
+  console.log(location.pathname);
+  console.log(sectionList);
   return (
     <div className="nav-bar__mobile">
       <ul className="nav-list__mobile">
         {sectionList.map((item, index) => (
-          <li key={index + item.link} className="navbar-link__mobile">
-            <Link className="nav-link__mobile" to={item.link}>
+          <li key={index + item.link} className={"navbar-link__mobile"}>
+            <Link
+              className={
+                location.pathname === item.link
+                  ? "nav-link__mobile blue-text "
+                  : "nav-link__mobile"
+              }
+              to={item.link}
+              onClick={handleClick}
+            >
               {item.name}{" "}
               <svg
                 width="24"

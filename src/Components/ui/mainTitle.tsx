@@ -17,7 +17,7 @@ const MainTitle: React.FC = () => {
             <h1>Nikita Bushuev</h1>
             <p>
               React Frontend Developer
-              <Link to="/">learn more</Link>
+              <Link to="/resume">learn more</Link>
             </p>
           </div>
         </div>

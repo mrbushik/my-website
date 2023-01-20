@@ -59,32 +59,32 @@ const SiteSections: React.FC = () => {
             </div>
           </Link>
         ))}
-        <a href={"mailto:" + aboutMeItemsContacts[0].link}>
-          <div
-            className={
-              "about-me_container " + aboutMeItemsContacts[0].background
-            }
-          >
-            <p>
-              {aboutMeItemsContacts[0].icon}
-              {aboutMeItemsContacts[0].title}
-            </p>
-            <img src={aboutMeItemsContacts[0].url} />
-          </div>
-        </a>
-        <a href={aboutMeItemsContacts[1].link} target="_blank">
-          <div
-            className={
-              "about-me_container " + aboutMeItemsContacts[1].background
-            }
-          >
-            <p>
-              {aboutMeItemsContacts[1].icon}
-              {aboutMeItemsContacts[1].title}
-            </p>
-            <img src={aboutMeItemsContacts[1].url} />
-          </div>
-        </a>
+          <a href={"mailto:" + aboutMeItemsContacts[0].link}>
+            <div
+              className={
+                "about-me_container " + aboutMeItemsContacts[0].background
+              }
+            >
+              <p>
+                {aboutMeItemsContacts[0].icon}
+                {aboutMeItemsContacts[0].title}
+              </p>
+              <img src={aboutMeItemsContacts[0].url} />
+            </div>
+          </a>
+          <a href={aboutMeItemsContacts[1].link} target="_blank">
+            <div
+              className={
+                "about-me_container " + aboutMeItemsContacts[1].background
+              }
+            >
+              <p>
+                {aboutMeItemsContacts[1].icon}
+                {aboutMeItemsContacts[1].title}
+              </p>
+              <img src={aboutMeItemsContacts[1].url} />
+            </div>
+          </a>
       </div>
     </div>
   );

@@ -50,8 +50,8 @@ const ContactPage: React.FC = () => {
             <p>Wroclaw, Poland</p>
           </div>
           {contactItems.map((item: contacts, index: number) => (
-            <div className="contact-page__item">
-              <img src={item.imgLink} />{" "}
+            <div className="contact-page__item" key={index}>
+              <img src={item.imgLink} />
               <a className="nav-link" href={item.itemLink}>
                 {item.title}
               </a>
