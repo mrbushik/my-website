@@ -43,7 +43,12 @@ const NavBar: React.FC = () => {
             <div>
               <ul className="nav-list">
                 <li className="navbar-link">
-                  <Link className="nav-link" to="/">
+                  <Link
+
+                    className="nav-link"
+                    to="/"
+                    onClick={() => setActiveBtn(false)}
+                  >
                     Main
                   </Link>
                 </li>

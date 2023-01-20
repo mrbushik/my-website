@@ -112,6 +112,7 @@ const ResumePage: React.FC = () => {
               ))}
             </ul>
           </div>
+          <div className="resume_skills__separator"></div>
           <div className="resume-experience__education">
             <div className="resume-experience">
               <h5 className="resume-section__name resume-experience__title">
