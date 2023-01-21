@@ -21,7 +21,7 @@ const SiteSections: React.FC = () => {
       icon: siteExampleIcon,
       link: "/works",
       title: "Look at my work",
-      url: "https://res.cloudinary.com/drfjcq9hg/image/upload/v1673526466/bushik123/%D0%BD%D0%BE%D1%83%D1%82_%D1%81_%D1%81%D0%B0%D0%B9%D1%82%D0%BE%D0%BC_fwv17c.png",
+      url: "https://res.cloudinary.com/drfjcq9hg/image/upload/v1674308698/bushik123/%D0%BD%D0%BE%D1%83%D1%82_%D1%81_%D1%81%D0%B0%D0%B9%D1%82%D0%BE%D0%BC_dggeph.png",
       background: "blue",
     },
   ];
@@ -59,32 +59,32 @@ const SiteSections: React.FC = () => {
             </div>
           </Link>
         ))}
-          <a href={"mailto:" + aboutMeItemsContacts[0].link}>
-            <div
-              className={
-                "about-me_container " + aboutMeItemsContacts[0].background
-              }
-            >
-              <p>
-                {aboutMeItemsContacts[0].icon}
-                {aboutMeItemsContacts[0].title}
-              </p>
-              <img src={aboutMeItemsContacts[0].url} />
-            </div>
-          </a>
-          <a href={aboutMeItemsContacts[1].link} target="_blank">
-            <div
-              className={
-                "about-me_container " + aboutMeItemsContacts[1].background
-              }
-            >
-              <p>
-                {aboutMeItemsContacts[1].icon}
-                {aboutMeItemsContacts[1].title}
-              </p>
-              <img src={aboutMeItemsContacts[1].url} />
-            </div>
-          </a>
+        <a href={"mailto:" + aboutMeItemsContacts[0].link}>
+          <div
+            className={
+              "about-me_container " + aboutMeItemsContacts[0].background
+            }
+          >
+            <p>
+              {aboutMeItemsContacts[0].icon}
+              {aboutMeItemsContacts[0].title}
+            </p>
+            <img src={aboutMeItemsContacts[0].url} />
+          </div>
+        </a>
+        <a href={aboutMeItemsContacts[1].link} target="_blank">
+          <div
+            className={
+              "about-me_container " + aboutMeItemsContacts[1].background
+            }
+          >
+            <p>
+              {aboutMeItemsContacts[1].icon}
+              {aboutMeItemsContacts[1].title}
+            </p>
+            <img src={aboutMeItemsContacts[1].url} />
+          </div>
+        </a>
       </div>
     </div>
   );

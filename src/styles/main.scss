@@ -457,6 +457,28 @@ ul {
 }
 //contact page
 
+//examples page
+.examples-main__container {
+  padding: 0 50px;
+}
+.examples_page__title {
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+
+  h2 {
+    font-size: 48px;
+    font-weight: 900;
+    margin: 0;
+  }
+  p {
+    font-size: 28px;
+    font-weight: 400;
+    margin: 0 0 0 5%;
+  }
+}
+//examples page
+
 .aquamarine {
   background: #bde9c9;
 }
