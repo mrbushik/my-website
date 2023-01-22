@@ -477,6 +477,59 @@ ul {
     margin: 0 0 0 5%;
   }
 }
+.site-item {
+  background-color: #f2f2f2;
+  display: flex;
+  margin: 50px 0;
+  height: 480px;
+}
+.site-item__image {
+  position: relative;
+  overflow: hidden;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-right: 5%;
+}
+
+.site-item__image img {
+  margin-top: 7%;
+  height: 340px;
+  object-fit: cover;
+  object-position: left;
+}
+.site-item__info {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  margin-left: 5%;
+  h5 {
+    font-size: 36px;
+    font-weight: 900;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+}
+.site-item__description {
+  padding-right: 10%;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-right: 5%;
+  line-height: 1.5;
+}
+.site-item__separator {
+  margin-top: 30px;
+  height: 1px;
+  background: #d9d9d9;
+  width: 85%;
+}
+.site-item__more {
+  margin-top: 20px;
+  svg {
+    margin-left: 10px;
+  }
+}
 //examples page
 
 .aquamarine {

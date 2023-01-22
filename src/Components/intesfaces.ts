@@ -20,3 +20,10 @@ export interface selectionListItem {
   name: string;
   link: string;
 }
+export interface siteItemInterface {
+  title: string;
+  pageLink: string;
+  description: string;
+  images: string[];
+  styles?: string;
+}
