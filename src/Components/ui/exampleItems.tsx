@@ -1,5 +1,6 @@
 import React from "react";
 import { siteItemInterface } from "../intesfaces";
+import { Link } from "react-router-dom";
 
 type exampleItemsProps = {
   exampleItem: siteItemInterface;
@@ -13,8 +14,11 @@ const ExampleItems: React.FC<exampleItemsProps> = ({ exampleItem }) => {
           <h5>{exampleItem.title}</h5>
           <p className="site-item__description">{exampleItem.description}</p>
           <div className="site-item__separator"></div>
-          <p className="site-item__more">
-            Learn more{" "}
+          <Link
+            to={"my-works/" + exampleItem.pageLink}
+            className="site-item__more"
+          >
+            Learn more
             <svg
               width="15"
               height="15"
@@ -29,7 +33,7 @@ const ExampleItems: React.FC<exampleItemsProps> = ({ exampleItem }) => {
                 fill="black"
               />
             </svg>
-          </p>
+          </Link>
         </div>
       </div>
       <div className="site-item__image">

@@ -51,7 +51,8 @@ export const examplesList: siteItemInterface[] = [
   {
     title: "Dostaver",
     pageLink: "dostaver",
-    description: "",
+    description:
+      'The website of the courier delivery "Dostaver".  Adaptive layout, stylization, checking of forms for fullness is performed.  The site has routing between pages.',
     styles: "in-phone__img",
     images: [
       "https://res.cloudinary.com/drfjcq9hg/image/upload/v1674380515/bushik123/dostaver_jcxexu.png",

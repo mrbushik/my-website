@@ -524,9 +524,23 @@ ul {
   width: 85%;
 }
 .site-item__more {
+  display: block;
+  color: #111111;
   margin-top: 20px;
   svg {
     margin-left: 10px;
+    fill: #111111;
+  }
+  svg path {
+    fill: inherit;
+    stroke: inherit;
+    stroke-width: inherit;
+  }
+}
+.site-item__more:hover {
+  color: #021f82;
+  svg {
+    fill: #021f82 !important;
   }
 }
 //examples page
