@@ -13,7 +13,8 @@ export const examplesList: siteItemInterface[] = [
   {
     title: "IT quiz",
     pageLink: "it-quiz",
-    description: "",
+    description:
+      "An application with quizzes that tests knowledge of programming languages, after passing the quiz, the result is visible, the number of correct answers and the places where mistakes were made. The user can also improve their knowledge with the help of useful links.",
     images: [
       "https://res.cloudinary.com/drfjcq9hg/image/upload/v1674309624/bushik123/quiz1_ntonhi.png",
     ],
@@ -21,7 +22,8 @@ export const examplesList: siteItemInterface[] = [
   {
     title: "Jewelry Store",
     pageLink: "jewelry-store",
-    description: "",
+    description:
+      "An online store that presents men's and women's jewelry. It is possible to filter and sort the product by category. The user can put the product in the cart and place an order.",
     images: [
       "https://res.cloudinary.com/drfjcq9hg/image/upload/v1674309624/bushik123/jewelry_wug8nr.png",
     ],
@@ -30,7 +32,8 @@ export const examplesList: siteItemInterface[] = [
     title: "Sale of web sites",
     pageLink: "Sale-of-web-sites",
     styles: "in-phone__img",
-    description: "",
+    description:
+      "A landing page made for a company engaged in the creation and promotion of websites. User survey forms and feedback forms have been completed, and adaptive layout has also been implemented.",
     images: [
       "https://res.cloudinary.com/drfjcq9hg/image/upload/v1674380516/bushik123/5cb0633d80f2cf201a4c3253_chl1ak.png",
     ],
@@ -38,7 +41,8 @@ export const examplesList: siteItemInterface[] = [
   {
     title: "3D GLO",
     pageLink: "3d-glo",
-    description: "",
+    description:
+      "A fully completed educational layout of a 3D modeling website. The website implements a timer, checking the input data in the form, a cost calculator, an example with a slider.",
     styles: "in-phone__img",
     images: [
       "https://res.cloudinary.com/drfjcq9hg/image/upload/v1674380515/bushik123/3d_yeruvz.png",

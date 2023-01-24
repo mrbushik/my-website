@@ -1,6 +1,7 @@
 import React from "react";
 import { examplesList } from "../examplesList";
 import { siteItemInterface } from "../intesfaces";
+import ExampleItems from "../ui/exampleItems";
 
 const ExamplesPage: React.FC = () => {
   return (
@@ -15,35 +16,7 @@ const ExamplesPage: React.FC = () => {
         </div>
         <div>
           {examplesList.map((item: siteItemInterface, index: number) => (
-            <div className="site-item">
-              <div className="site-item__info">
-                <div>
-                  <h5>{item.title}</h5>
-                  <p className="site-item__description">{item.description}</p>
-                  <div className="site-item__separator"></div>
-                  <p className="site-item__more">
-                    Learn more{" "}
-                    <svg
-                      width="15"
-                      height="15"
-                      viewBox="0 0 15 15"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M1 3.1V0.900002H14.1V14H11.9V4.65564L1.77782 14.7778L0.222183 13.2222L10.3444 3.1H1Z"
-                        fill="black"
-                      />
-                    </svg>
-                  </p>
-                </div>
-              </div>
-              <div className="site-item__image">
-                <img src={item.images[0]} />
-              </div>
-            </div>
+            <ExampleItems exampleItem={item} key={index} />
           ))}
         </div>
       </div>
