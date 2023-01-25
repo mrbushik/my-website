@@ -547,9 +547,33 @@ ul {
 
 //example item
 .example-item__title {
-  margin-top: 100px;
   font-size: 48px;
+  padding-right: 5%;
 }
+.example-item__description {
+  font-size: 18px;
+  font-weight: 500;
+  width: 30%;
+  position: relative;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  &::after {
+    background-color: #e7ffe9;
+    border-radius: 50%;
+    content: "";
+    height: 17rem;
+    left: 2rem;
+    position: absolute;
+    top: -4rem;
+    width: 17rem;
+    z-index: -1;
+  }
+}
+//.example-item__rectangle {
+//  position: absolute;
+//  width: 100px;
+//  height: 100px;
+//}
 .alice-carousel__stage-item {
   img {
     width: 100%;
@@ -557,13 +581,42 @@ ul {
   }
 }
 .example_item__text {
+  margin-top: 150px;
+  justify-content: space-between;
   display: flex;
   align-items: center;
 }
 .alice-carousel {
   position: relative;
 }
-
+.example_link__text {
+  font-weight: 500;
+  text-align: right;
+  margin-top: 90px;
+  a {
+    font-weight: 500;
+    color: #00249c;
+    svg {
+      margin-left: 5px;
+      fill: #111111;
+    }
+    svg path {
+      fill: inherit;
+      stroke: inherit;
+      stroke-width: inherit;
+    }
+  }
+}
+.example-page__link:hover {
+  svg {
+    fill: #021f82 !important;
+  }
+}
+.example-carousel__title {
+  margin-top: 150px;
+  margin-bottom: 50px;
+  font-size: 36px;
+}
 //example item
 
 .aquamarine {
