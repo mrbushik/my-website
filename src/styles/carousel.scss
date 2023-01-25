@@ -1,0 +1,54 @@
+.alice-carousel {
+  position: relative;
+}
+.alice-carousel__prev-btn {
+  span {
+    font-size: 60px;
+    color: #00249c !important;
+
+    &:hover {
+      color: #021f82 !important;
+      transition: 0.2s linear;
+    }
+  }
+}
+.alice-carousel__next-btn {
+  font-size: 60px;
+  .alice-carousel__next-btn-item {
+    color: #00249c !important;
+    &:hover {
+      color: #021f82 !important;
+      transition: 0.2s linear;
+    }
+  }
+}
+.alice-carousel__prev-btn-wrapper {
+  left: -5%;
+
+  position: absolute;
+  top: 50%;
+}
+.alice-carousel__next-btn-wrapper {
+  position: absolute;
+  top: 50%;
+  right: -5%;
+}
+.arrow {
+  width: 30px;
+  height: 30px;
+  border-top: 3px solid #6e18c0;
+  border-right: 3px solid #6e18c0;
+  margin-right: 0px;
+}
+.arrow-right {
+  transform: rotate(45deg);
+  position: absolute;
+  top: 50%;
+  right: 4%;
+}
+.arrow-left {
+  transform: rotate(-135deg);
+  position: absolute;
+  top: 50%;
+  left: 4%;
+}

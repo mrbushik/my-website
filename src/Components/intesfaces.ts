@@ -26,4 +26,5 @@ export interface siteItemInterface {
   description: string;
   images: string[];
   styles?: string;
+  hostLink?: string;
 }
