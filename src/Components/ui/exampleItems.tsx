@@ -37,7 +37,7 @@ const ExampleItems: React.FC<exampleItemsProps> = ({ exampleItem }) => {
         </div>
       </div>
       <div className="site-item__image">
-        <img src={exampleItem.images[0]} />
+        <img src={exampleItem.images[0]} className={exampleItem?.styles} />
       </div>
     </div>
   );

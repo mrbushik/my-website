@@ -1,0 +1,46 @@
+@media (max-width: 1085px) {
+  .examples_page__title {
+    flex-wrap: wrap;
+    p {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  }
+}
+@media (max-width: 735px) {
+  .examples-main__container {
+    padding: 0px;
+  }
+  .examples_page__title {
+    margin-left: 10px;
+    padding-right: 2%;
+  }
+}
+@media (max-width: 550px) {
+  .site-item {
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column-reverse;
+    height: auto;
+  }
+  .site-item__info {
+    width: unset;
+    margin-bottom: 30px;
+  }
+  .site-item__image {
+    width: unset;
+    padding: 0 3%;
+    margin-bottom: 20px;
+    justify-content: center;
+    img {
+      width: 100%;
+      height: 360px;
+    }
+  }
+
+  .in-phone__img {
+    margin-left: 0;
+    height: auto !important;
+    width: 60% !important;
+  }
+}

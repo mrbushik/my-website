@@ -1,4 +1,4 @@
-.alice-carousel {
+.alice-carousel__wrapper {
   position: relative;
 }
 .alice-carousel__prev-btn {
@@ -25,11 +25,11 @@
 .alice-carousel__prev-btn-wrapper {
   left: -5%;
   position: absolute;
-  top: 50%;
+  top: 39%;
 }
 .alice-carousel__next-btn-wrapper {
   position: absolute;
-  top: 50%;
+  top: 39%;
   right: -5%;
 }
 .arrow {
@@ -50,4 +50,8 @@
   position: absolute;
   top: 50%;
   left: 4%;
+}
+.alice-carousel__dots-item:not(.__custom):hover,
+.alice-carousel__dots-item:not(.__custom).__active {
+  background-color: #021f82;
 }

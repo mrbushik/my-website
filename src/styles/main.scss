@@ -1,3 +1,5 @@
+@import "carousel.scss";
+
 body {
   font-family: "Roboto";
   color: #111;
@@ -617,6 +619,9 @@ ul {
   margin-bottom: 50px;
   font-size: 36px;
 }
+.in-phone__img {
+  margin-left: 25%;
+}
 //example item
 
 .aquamarine {
@@ -652,4 +657,4 @@ ul {
 @import "adaptiveNavBar";
 @import "adaptiveMain";
 @import "adaptiveResume";
-@import "carousel.scss";
+@import "adaptiveExamples";
