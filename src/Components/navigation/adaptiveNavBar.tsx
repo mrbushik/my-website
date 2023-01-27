@@ -12,8 +12,7 @@ const AdaptiveNavBar: React.FC<navBarProps> = ({
   handleClick,
 }) => {
   const location = useLocation();
-  console.log(location.pathname);
-  console.log(sectionList);
+
   return (
     <div className="nav-bar__mobile">
       <ul className="nav-list__mobile">

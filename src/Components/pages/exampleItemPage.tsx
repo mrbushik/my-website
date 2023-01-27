@@ -6,16 +6,9 @@ import "react-alice-carousel/lib/scss/alice-carousel.scss";
 import AliceCarousel from "react-alice-carousel";
 const ExampleItemPage: React.FC = () => {
   const params: any = useParams();
-  const [forMobile, setForMobile] = React.useState(false);
   const targetExampleElement: siteItemInterface | undefined = examplesList.find(
     (item: siteItemInterface) => item.pageLink === params.Id
   );
-
-  useEffect(() => {
-    if (window.screen.width < 1000) {
-      setForMobile(true);
-    }
-  }, []);
 
   const handleDragStart = (e: any) => e.preventDefault();
 
@@ -27,6 +20,7 @@ const ExampleItemPage: React.FC = () => {
           src={targetExampleElement.images[i + 1]}
           onDragStart={handleDragStart}
           role="presentation"
+          alt="example of a developed website"
         />
       );
     }
@@ -37,11 +31,12 @@ const ExampleItemPage: React.FC = () => {
           src={targetExampleElement.mobileImages[i]}
           onDragStart={handleDragStart}
           role="presentation"
+          alt="example of a developed website"
         />
       );
     }
   }
-  console.log(items);
+
   return (
     <div>
       <div className="container">
