@@ -29,3 +29,4 @@ export interface siteItemInterface {
   hostLink?: string;
   mobileImages: string[];
 }
+//mobile image 375 X 648

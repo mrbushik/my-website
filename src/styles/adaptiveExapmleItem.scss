@@ -54,7 +54,8 @@
 @media (max-width: 450px) {
   .alice-carousel__stage-item {
     img {
-      width: 300px;
+      width: 100%;
+      height: auto;
     }
   }
   .example-item__description::after {
