@@ -569,13 +569,9 @@ ul {
     top: -4rem;
     width: 17rem;
     z-index: -1;
+    margin-bottom: 25px;
   }
 }
-//.example-item__rectangle {
-//  position: absolute;
-//  width: 100px;
-//  height: 100px;
-//}
 .alice-carousel__stage-item {
   img {
     width: 100%;
@@ -658,3 +654,4 @@ ul {
 @import "adaptiveMain";
 @import "adaptiveResume";
 @import "adaptiveExamples";
+@import "adaptiveExapmleItem";

@@ -1,20 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { examplesList } from "../examplesList";
 import { siteItemInterface } from "../intesfaces";
 import { useParams } from "react-router";
 import "react-alice-carousel/lib/scss/alice-carousel.scss";
 import AliceCarousel from "react-alice-carousel";
-import { Link } from "react-router-dom";
 const ExampleItemPage: React.FC = () => {
   const params: any = useParams();
+  const [forMobile, setForMobile] = React.useState(false);
   const targetExampleElement: siteItemInterface | undefined = examplesList.find(
     (item: siteItemInterface) => item.pageLink === params.Id
   );
 
+  useEffect(() => {
+    if (window.screen.width < 1000) {
+      setForMobile(true);
+    }
+  }, []);
+
   const handleDragStart = (e: any) => e.preventDefault();
 
   const items = [];
-  if (targetExampleElement) {
+  if (targetExampleElement && window.screen.width > 1000) {
     for (let i = 0; i < targetExampleElement.images.length - 1; i++) {
       items.push(
         <img
@@ -24,8 +30,18 @@ const ExampleItemPage: React.FC = () => {
         />
       );
     }
+  } else if (targetExampleElement && window.screen.width <= 1000) {
+    for (let i = 0; i < targetExampleElement.mobileImages.length; i++) {
+      items.push(
+        <img
+          src={targetExampleElement.mobileImages[i]}
+          onDragStart={handleDragStart}
+          role="presentation"
+        />
+      );
+    }
   }
-  console.log(targetExampleElement);
+  console.log(items);
   return (
     <div>
       <div className="container">
@@ -64,7 +80,11 @@ const ExampleItemPage: React.FC = () => {
         <h5 className="example-carousel__title">
           View screenshots of this app
         </h5>
-        <AliceCarousel mouseTracking items={items} />
+        {window.screen.width <= 1000 ? (
+          <AliceCarousel mouseTracking items={items} />
+        ) : (
+          <AliceCarousel mouseTracking items={items} />
+        )}
       </div>
     </div>
   );

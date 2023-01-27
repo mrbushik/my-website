@@ -20,6 +20,13 @@ const ResumePage: React.FC = () => {
   ];
   const experienceList: experienceInterface[] = [
     {
+      year: "2022-present",
+      length: "4 months",
+      company: "Freelance",
+      description:
+        "Development of web applications using: React, Redux, TypeScript, React-Router, NodeJS.",
+    },
+    {
       year: 2022,
       length: "3 months",
       company: "Itransition, Intern Frontend developer ",

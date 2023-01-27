@@ -27,4 +27,5 @@ export interface siteItemInterface {
   images: string[];
   styles?: string;
   hostLink?: string;
+  mobileImages: string[];
 }
