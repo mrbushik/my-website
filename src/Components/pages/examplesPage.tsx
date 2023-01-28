@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { examplesList } from "../examplesList";
 import { siteItemInterface } from "../intesfaces";
 import ExampleItems from "../ui/exampleItems";
 
 const ExamplesPage: React.FC = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+
   return (
     <div>
       <div className="container examples-main__container">

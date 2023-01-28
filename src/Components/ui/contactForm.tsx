@@ -16,9 +16,9 @@ const ContactForm: React.FC = () => {
                 phone. Choose any convenient method.
               </p>
             </div>
-            <Link to="/contact" className="contact-btn">
+            <a href="mailto:mrbushik1@gmail.com" className="contact-btn">
               {contactIcon} Contact
-            </Link>
+            </a>
             <div className="indicator-contact__container">
               <img
                 className="indicator-img"

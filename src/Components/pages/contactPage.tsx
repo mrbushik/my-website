@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { contacts } from "../intesfaces";
 
 const ContactPage: React.FC = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+
   const contactItems: contacts[] = [
     {
       imgLink:

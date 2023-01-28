@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { experienceInterface } from "../intesfaces";
 import ExperienceItem from "../ui/experienceItem";
 
 const ResumePage: React.FC = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+
   const skillsList: string[] = [
     "React JS",
     "Redux",

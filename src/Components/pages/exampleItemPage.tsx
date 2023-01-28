@@ -10,6 +10,10 @@ const ExampleItemPage: React.FC = () => {
     (item: siteItemInterface) => item.pageLink === params.Id
   );
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+
   const handleDragStart = (e: any) => e.preventDefault();
 
   const items = [];
